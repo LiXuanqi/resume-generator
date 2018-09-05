@@ -1,18 +1,8 @@
 import React from 'react';
 import "./CardWithTime.css"
 
-const renderDescriptionList = (descList) => {
-  return (
-    <ul>
-      { descList.map((item, index) => {
-        return (
-          <li key={index}>
-            { item }
-          </li>
-        );
-      })}
-    </ul>
-  );
+function createMarkup() {
+  return {__html: 'First &middot; Second'};
 }
 
 const CardWithTime = ({ title, subtitle, startTime, endTime, desc, id}) => {
@@ -24,8 +14,7 @@ const CardWithTime = ({ title, subtitle, startTime, endTime, desc, id}) => {
         <span>{ startTime } - { endTime }</span>
       </div>
       <div className="card-subtitle">{ subtitle }</div>
-      <p className="card-desc">
-        { typeof desc === "string" ? desc : renderDescriptionList(desc) }
+      <p className="card-desc" dangerouslySetInnerHTML={desc}>
       </p>
     </div>
   );

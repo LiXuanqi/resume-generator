@@ -12,7 +12,9 @@ const EDUCATIONS = [
     degree: "Master of Science",
     startTime: "09/2018",
     endTime: "Present",
-    desc: "Major in Computer Software Engineering -  Information Systems"
+    desc: {
+      __html: "Major in Computer Software Engineering -  Information Systems"
+    }
    
   },
   {
@@ -20,7 +22,9 @@ const EDUCATIONS = [
     degree: "Bachelor of Engineering",
     startTime: "09/2013",
     endTime: "06/2017",
-    desc: "Major in Aircraft Power Engineering - Control and Simulation Track"
+    desc: {
+      __html: "Major in Aircraft Power Engineering - Control and Simulation Track"
+    }
   }
 ];
 
@@ -49,24 +53,34 @@ const WORK_EXPERIENCES = [
     job: "Software Development Engineer Intern",
     startTime: "12/2017",
     endTime: "06/2018",
-    desc: [
-      "Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.",
-      "Developed a map component for drones using Vue, Vuex, Leaflet and Baidu Map API.",
-      "Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.",
-      "Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style."
-    ]
+    desc: {
+      __html: 
+        `
+          <ul>
+            <li>Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.</li>
+            <li>Developed a map component for drones using Vue, Vuex, Leaflet and Baidu Map API.</li>
+            <li>Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.</li>
+            <li>Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style.</li>
+          </ul>
+        `
+    }
   },
   {
     company: "SmartGCS Technology Co., Ltd, Nanjing, China",
     job: "Software Development Engineer Intern",
     startTime: "12/2017",
     endTime: "06/2018",
-    desc: [
-      "Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.",
-      "Developed a map component for drones using Vue, Vuex, Leaflet and Baidu Map API.",
-      "Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.",
-      "Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style."
-    ]
+    desc: {
+      __html: 
+        `
+          <ul>
+            <li>Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.</li>
+            <li>Developed a map component for drones using Vue, Vuex, Leaflet and Baidu Map API.</li>
+            <li>Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.</li>
+            <li>Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style.</li>
+          </ul>
+        `
+    }
   }
 ];
 
@@ -76,29 +90,40 @@ const PROJECTS = [
     subtitle: "Real-time collaborative Pad",
     startTime: "07/2018",
     endTime: "09/2018",
-    desc: [
-      "Developed a real-time collaborative pad like google doc which allows users to practice mock interview.",
-      "Designed and implemented a Single Page Web Application on AWS using Angular,  Rxjs, Bootstrap, and Ace (an embeddable code editor written in JavaScript).",
-      "Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.",
-      "Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style."
-    ]
+    desc: {
+      __html: 
+        `
+        <ul>
+          <li>Developed a real-time collaborative pad like google doc which allows users to practice mock interview.</li>
+          <li>Designed and implemented a Single Page Web Application on AWS using <strong>Angular</strong>,  <strong>Rxjs</strong>, <strong>Bootstrap</strong>, and <strong>Ace</strong> (an embeddable code editor written in JavaScript).</li>
+          <li>Implemented backend server using Express (Node.js), WebSocket with socket.io, Mongoose with MongoDB and cached data by Redis.</li>
+          <li>Implemented executor server which can build and run code using  Flask, Docker.</li>
+        </ul>
+        `
+    }
   },
   {
     title: "Microservice Development with Spring Cloud Components",
     subtitle: "Ride-hailing System",
     startTime: "03/2018",
     endTime: "06/2018",
-    desc: [
-      "Developed a ride-hailing system like Uber in Microservice Architecture with Spring Boot and Spring Cloud Components.",
-      "Used Spring Eureka for Service Registry & Discovery and Spring Hystrix for fault tolerance& real-time monitoring (Circuit Breaker Pattern).",
-      "Implemented Asynchronous dispatch service using Spring WebClient with Client-Side Load Balancing (Netflix Ribbon).",
-      "Implemented location, trip, order and account services using RabbitMQ, Spring Data JPA with MariaDB and cached data by Redis."
-    ]
+    desc: {
+      __html: 
+        `
+        <ul>
+          <li>Developed a ride-hailing system like Uber in Microservice Architecture with Spring Boot and Spring Cloud Components.</li>
+          <li>Used Spring Eureka for Service Registry & Discovery and Spring Hystrix for fault tolerance& real-time monitoring (Circuit Breaker Pattern).</li>
+          <li>Implemented Asynchronous dispatch service using Spring WebClient with Client-Side Load Balancing (Netflix Ribbon).</li>
+          <li>Implemented location, trip, order and account services using RabbitMQ, Spring Data JPA with MariaDB and cached data by Redis.</li>
+        </ul>
+        `
+    }
   }
 ];
 export {
   PROFILE,
   EDUCATIONS,
   SKILLS,
+  WORK_EXPERIENCES,
   PROJECTS
 }

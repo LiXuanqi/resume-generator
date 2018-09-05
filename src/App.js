@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { PROFILE, EDUCATIONS, SKILLS, PROJECTS } from './resume';
+import { PROFILE, EDUCATIONS, SKILLS, WORK_EXPERIENCES, PROJECTS } from './resume';
 // components
 import CVContainer from './components/CVContainer';
 import CardWithTime from './components/CardWithTime';
@@ -20,8 +20,17 @@ class App extends Component {
     })
   }
 
-  renderWorkExperienceCards() {
- 
+  renderWorkExperienceCards(wordExperienceList) {
+    return wordExperienceList.map((item, index) => {
+      return (<CardWithTime
+        id={index}
+        title={item.company}
+        subtitle={item.job}
+        startTime={item.startTime}
+        endTime={item.endTime}
+        desc={item.desc}
+      />);
+    })
   }
 
   renderProjectCards(projectList) {
@@ -62,7 +71,8 @@ class App extends Component {
           <div className="header-container">
             <h3 className="header-text">Work experience</h3>
           </div>
-       
+          { this.renderWorkExperienceCards(WORK_EXPERIENCES) }
+
           <div className="header-container">
             <h3 className="header-text">Projects</h3>
           </div>
