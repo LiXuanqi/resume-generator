@@ -13,6 +13,7 @@ const EDUCATIONS = [
     startTime: "09/2018",
     endTime: "Present",
     desc: "Major in Computer Software Engineering -  Information Systems"
+   
   },
   {
     university: "Nanjing University of Aeronautics and Astronautics",
@@ -68,8 +69,36 @@ const WORK_EXPERIENCES = [
     ]
   }
 ];
+
+const PROJECTS = [
+  {
+    title: "Full Stack Development",
+    subtitle: "Real-time collaborative Pad",
+    startTime: "07/2018",
+    endTime: "09/2018",
+    desc: [
+      "Developed a real-time collaborative pad like google doc which allows users to practice mock interview.",
+      "Designed and implemented a Single Page Web Application on AWS using Angular,  Rxjs, Bootstrap, and Ace (an embeddable code editor written in JavaScript).",
+      "Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.",
+      "Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style."
+    ]
+  },
+  {
+    title: "Microservice Development with Spring Cloud Components",
+    subtitle: "Ride-hailing System",
+    startTime: "03/2018",
+    endTime: "06/2018",
+    desc: [
+      "Developed a ride-hailing system like Uber in Microservice Architecture with Spring Boot and Spring Cloud Components.",
+      "Used Spring Eureka for Service Registry & Discovery and Spring Hystrix for fault tolerance& real-time monitoring (Circuit Breaker Pattern).",
+      "Implemented Asynchronous dispatch service using Spring WebClient with Client-Side Load Balancing (Netflix Ribbon).",
+      "Implemented location, trip, order and account services using RabbitMQ, Spring Data JPA with MariaDB and cached data by Redis."
+    ]
+  }
+];
 export {
   PROFILE,
   EDUCATIONS,
-  SKILLS
+  SKILLS,
+  PROJECTS
 }
