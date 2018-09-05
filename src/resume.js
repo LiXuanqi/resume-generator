@@ -66,18 +66,28 @@ const WORK_EXPERIENCES = [
     }
   },
   {
-    company: "SmartGCS Technology Co., Ltd, Nanjing, China",
-    job: "Software Development Engineer Intern",
-    startTime: "12/2017",
-    endTime: "06/2018",
+    company: "NUAA IT Innovation and Entrepreneurship Lab, Nanjing, China",
+    job: "Full Stack Team member",
+    startTime: "09/2015",
+    endTime: "06/2017",
     desc: {
       __html: 
         `
+          <strong>NUAA OVERSEA</strong>
           <ul>
-            <li>Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.</li>
-            <li>Developed a map component for drones using Vue, Vuex, Leaflet and Baidu Map API.</li>
-            <li>Integrated the original Qt project with the new map component using Qt WebEngine and Qt WebChannel.</li>
-            <li>Built Unit Test case by Mocha (JavaScript test framework) and used Eslint to keep the code consistent in style.</li>
+            <li>Developed a web application which allows students to report their CVs and share graduate school offers they got.</li>
+            <li>Designed and implemented the Front-end using React, Redux, React Router.</li>
+            <li>Implemented complex asynchronous logic with Redux-Saga</li>
+            <li>Extracted 10000 student admissions using Python Web Crawler with Requests and Beautiful Soup.</li>
+            <li>Designed APIs in compliance with RESTful API style and implemented backend server using Flask, MariaDB.</li>
+            <li>Deployed on AWS with Nginx, Docker.</li>
+          </ul>
+          <strong>Shop Management System</strong>
+          <ul>
+            <li>Developed a shop management System like Yelp which allows students to comment, merchants and school officers to manage shops.</li>
+            <li>Developed a native mobile app using Wechat Mini Program development framework.</li>
+            <li>Designed and Implemented an admin dashboard Web Application using Vue, Vuex, Less.</li>
+            <li>Simulated APIs with Mock.js and configured Webpack to allow code to work in both the production and development environment.</li>
           </ul>
         `
     }
