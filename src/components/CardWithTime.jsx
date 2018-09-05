@@ -1,10 +1,6 @@
 import React from 'react';
 import "./CardWithTime.css"
 
-function createMarkup() {
-  return {__html: 'First &middot; Second'};
-}
-
 const CardWithTime = ({ title, subtitle, startTime, endTime, desc, id}) => {
 
   return (
