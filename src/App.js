@@ -4,6 +4,7 @@ import { PROFILE, EDUCATIONS, SKILLS, PROJECTS } from './resume';
 // components
 import CVContainer from './components/CVContainer';
 import CardWithTime from './components/CardWithTime';
+import SkillContainer from './components/SkillContainer';
 class App extends Component {
 
   renderEducationCards(educationList) {
@@ -54,6 +55,9 @@ class App extends Component {
           <div className="header-container">
             <h3 className="header-text">Skills</h3>
           </div>
+          <SkillContainer
+            skillList={SKILLS}
+          />
 
           <div className="header-container">
             <h3 className="header-text">Work experience</h3>
