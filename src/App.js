@@ -1,44 +1,49 @@
 import React, { Component } from 'react';
 import './App.css';
+import { PROFILE, EDUCATIONS, SKILLS } from './resume';
+// components
 import CVContainer from './components/CVContainer';
 import CardWithTime from './components/CardWithTime';
-// components
-
 class App extends Component {
+
+  renderEducationCards(educationList) {
+    return educationList.map((item, index) => {
+      return (<CardWithTime
+        id={index}
+        title={item.university}
+        subtitle={item.degree}
+        startTime={item.startTime}
+        endTime={item.endTime}
+        desc={item.desc}
+      />);
+    })
+  }
+
+  renderWorkExperienceCards(workExperienceList) {
+
+  }
+
   render() {
     return (
       <div className="App">
         <CVContainer>
           <div id="profile">
             <div id="vcard">
-              <h1 className="full-name">Xuanqi Li</h1>
+              <h1 className="full-name">{ PROFILE.name }</h1>
             </div>
           </div>
           <div className="header-container">
             <h3 className="header-text">Education</h3>
           </div>
-          <CardWithTime
-            id={0}
-            title="Northeastern University, Silicon Valley Campus"
-            subtitle="Master of Science"
-            startTime="09/2018"
-            endTime="Present"
-            desc="Major in Computer Software Engineering -  Information Systems"
-          />
-          <CardWithTime
-            id={1}
-            title="Northeastern University, Silicon Valley Campus"
-            subtitle="Master of Science"
-            startTime="09/2018"
-            endTime="Present"
-            desc="Major in Computer Software Engineering -  Information Systems"
-          />
+          { this.renderEducationCards(EDUCATIONS) }
           <div className="header-container">
             <h3 className="header-text">Skills</h3>
           </div>
+
           <div className="header-container">
             <h3 className="header-text">Work experience</h3>
           </div>
+          { this.renderWorkExperienceCards(EDUCATIONS) }
           <div className="header-container">
             <h3 className="header-text">Projects</h3>
           </div>
