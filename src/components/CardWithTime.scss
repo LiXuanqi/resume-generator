@@ -1,3 +1,10 @@
+.card-container {
+
+}
+.top-line {
+  border-top: 1px solid black;
+  padding-top: .5em;
+}
 .card-title {
   display: flex;
   flex-direction: row;
@@ -12,7 +19,7 @@
   margin-bottom: .5em;
 }
 
-.card-intro {
+.card-desc {
   font-family: "Roboto", "Open Sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
   font-size: 14px;
   font-weight: 400;

@@ -17,7 +17,22 @@ class App extends Component {
           <div className="header-container">
             <h3 className="header-text">Education</h3>
           </div>
-          <CardWithTime />
+          <CardWithTime
+            id={0}
+            title="Northeastern University, Silicon Valley Campus"
+            subtitle="Master of Science"
+            startTime="09/2018"
+            endTime="Present"
+            desc="Major in Computer Software Engineering -  Information Systems"
+          />
+          <CardWithTime
+            id={1}
+            title="Northeastern University, Silicon Valley Campus"
+            subtitle="Master of Science"
+            startTime="09/2018"
+            endTime="Present"
+            desc="Major in Computer Software Engineering -  Information Systems"
+          />
           <div className="header-container">
             <h3 className="header-text">Skills</h3>
           </div>

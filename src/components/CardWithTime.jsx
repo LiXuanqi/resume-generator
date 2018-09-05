@@ -1,15 +1,15 @@
 import React from 'react';
 import "./CardWithTime.css"
 
-const CardWithTime = () => {
+const CardWithTime = ({ title, subtitle, startTime, endTime, desc, id}) => {
   return (
-    <div className="card-container">
+    <div className={ 'card-container'+ (id !== 0 ? 'card-container top-line' : '')}>
       <div className="card-title">
-        <span>Northeastern University, Silicon Valley Campus</span>
-        <span>09/2018 - Present</span>
+        <span>{ title }</span>
+        <span>{ startTime } - { endTime }</span>
       </div>
-      <div className="card-subtitle">Master of Science</div>
-      <p className="card-intro">Major in Computer Software Engineering -  Information Systems</p>
+      <div className="card-subtitle">{ subtitle }</div>
+      <p className="card-desc">{ desc }</p>
     </div>
   );
 }
