@@ -1,0 +1,26 @@
+{
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "description": "transform html to pdf.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiXuanqi/resume-generator.git"
+  },
+  "keywords": [
+    "resume",
+    "generator"
+  ],
+  "author": "1_x7 (lixuanqi1995@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiXuanqi/resume-generator/issues"
+  },
+  "homepage": "https://github.com/LiXuanqi/resume-generator#readme",
+  "dependencies": {
+    "puppeteer": "^1.7.0"
+  }
+}
