@@ -1,5 +1,5 @@
 import React from 'react';
-// import './RightContainer.css';
+import './RightContainer.css';
 import SkillContainer from './SkillContainer.jsx';
 import ProjectContainer from './ProjectContainer.jsx';
 import WorkExperienceContainer from './WorkExperienceContainer.jsx';

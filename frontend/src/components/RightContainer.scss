@@ -1,0 +1,32 @@
+section.right {
+  width: calc(100% - 220px);
+  background: #fff;
+  border-left: 1px solid #d8dde4;
+  float: right
+}
+
+.right li:first-child>h1 {
+  margin-top: 0
+}
+
+.right li>h1 i {
+  width: 32px;
+  margin-right: 5px;
+  text-align: center
+}
+
+.right blockquote {
+  border-left: 3px solid #d8dde4;
+  background: #f2f4f6;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 12px
+}
+
+.right h1 {
+  border-bottom: 1px solid #d8dde4
+}
+
+.right h2 {
+  font-size: 1rem
+}
