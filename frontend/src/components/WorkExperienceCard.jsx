@@ -8,15 +8,11 @@ const WorkExperienceCard = ({
   endTime,
   desc
 }) => {
-  const renderDescriptions = (list) => {
-    return (
-      list.map((item) => {
-        return (<p>{item}</p>);
-      })
-    );
-
-  }
-  console.log(desc);
+  const renderDescriptions = list => {
+    return list.map(item => {
+      return <p>{item}</p>;
+    });
+  };
   return (
     <li>
       <h2>

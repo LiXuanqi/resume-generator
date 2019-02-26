@@ -3,26 +3,15 @@ import './App.css';
 // components
 import LeftContainer from './components/LeftContainer.jsx';
 import RightContainer from './components/RightContainer.jsx';
+import { BASIC_INFO } from "./me";
 
-const introduction = {
-  name: "Xuanqi Li",
-  desc: "An problem solver adept at programming",
-  address: "San jose, CA.",
-  tel: "(408)-406-8721",
-  email: "lixuanqi1995@gmail.com",
-  wechat: "DreamSinker",
-  blogUrl: "http://lixuanqi.me/",
-  githubUrl: "https://github.com/LiXuanqi",
-  linkedinUrl: "https://www.linkedin.com/in/xuanqi-li/",
-  lofterUrl: "http://lixuanqi.lofter.com/"
-}
 
 class App extends Component {
   render() {
     return (
       <div className="">
         <div id="main">
-          <LeftContainer {...introduction}/>
+          <LeftContainer {...BASIC_INFO}/>
           <RightContainer />
         </div>
         <footer>Powered by <a href="https://www.rexskz.info/">skywalker_z</a></footer>
