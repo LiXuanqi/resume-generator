@@ -8,12 +8,21 @@ const WorkExperienceCard = ({
   endTime,
   desc
 }) => {
+  const renderDescriptions = (list) => {
+    return (
+      list.map((item) => {
+        return (<p>{item}</p>);
+      })
+    );
+
+  }
+  console.log(desc);
   return (
     <li>
       <h2>
         {company}, {jobTitle}（{startTime} ~ {endTime}）
       </h2>
-      <p>{desc}</p>
+      {renderDescriptions(desc)}
     </li>
   );
 };
