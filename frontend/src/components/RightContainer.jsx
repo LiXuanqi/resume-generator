@@ -57,13 +57,23 @@ const projects = [
     tip: "负责全部代码的编写。"
   }
 ];
+// TODO: handle <br>
+const works = [
+  {
+    company: "CTRS Technology Co., Ltd",
+    jobTitle: "Software Development Engineer Intern",
+    startTime: "2017-12",
+    endTime: "2018-06",
+    desc: "Worked in the Drone Team and Developed a Ground Station which allows users to control multiple drones automatically.\nDeveloped a map component for drones with Vue, Vuex, Leaflet, Baidu Map API and integrated with original Qt (C++ framework) project.\nDesigned and Implemented an algorithm to automatically plan the flight route for spraying pesticides and build Unit Test cases by Mocha."
+  }
+];
 const RightContainer = () => {
   return (
     <section className="right">
       <ul>
         <SkillContainer skills={skills} />
         <ProjectContainer projects={projects} />
-        <WorkExperienceContainer />
+        <WorkExperienceContainer works={works}/>
         <li>
           <h1>
             <i class="fa fa-user" />Introduction
