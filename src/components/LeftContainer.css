@@ -1,0 +1,28 @@
+.left {
+  width: 220px;
+  float: left;
+  overflow: hidden; }
+
+.left.fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+  overflow-y: auto; }
+
+.left h1 {
+  font-size: 18px;
+  margin: 12px 0; }
+
+.left p {
+  margin: 10px 0;
+  font-size: 14px; }
+
+.left ul ul li {
+  padding: 4px 0;
+  font-size: 14px; }
+
+.left p > i, .left li > i {
+  width: 16px;
+  height: 16px;
+  text-align: center; }

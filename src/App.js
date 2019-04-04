@@ -3,13 +3,13 @@ import './App.css';
 // components
 import LeftContainer from './components/LeftContainer.jsx';
 import RightContainer from './components/RightContainer.jsx';
-import { BASIC_INFO } from "./me";
+import { BASIC_INFO, isFindingJob } from "./me";
 
 
 class App extends Component {
   render() {
     return (
-      <div className="">
+      <div className={isFindingJob ? "" : "sorry"}>
         <div id="main">
           <LeftContainer {...BASIC_INFO}/>
           <RightContainer />

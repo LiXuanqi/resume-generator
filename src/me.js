@@ -1,3 +1,5 @@
+const isFindingJob = true // set false makes resume invisible.
+
 const BASIC_INFO = {
   name: "Xuanqi Li",
   desc: "An problem solver adept at programming",
@@ -83,5 +85,6 @@ export {
   BASIC_INFO,
   SKILLS,
   PROJECTS,
-  WORKS
+  WORKS,
+  isFindingJob
 }
